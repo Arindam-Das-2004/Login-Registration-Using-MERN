@@ -1,0 +1,25 @@
+/* Home.module.css */
+.container {
+  background: linear-gradient(135deg, #ff6b6b, #f06595, #cc5de8);
+  background-size: 600% 600%;
+  animation: gradient 10s ease infinite;
+}
+
+.card {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
